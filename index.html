@@ -69,6 +69,17 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script>
+            var yelpKey = WhR5O7lUjCk0DCs-PNdCGC3Wn82klexZGqnWRKU9Or9R1RWcsEIDj7PZbUV_d2GY4qBav0YdAFQ_KwJn3nGd5iq_EEogmjVuT4K5dPNa4rteD4P4ZVt3ciNz9EpNW3Yx;
+            var foodSearch = "";
+            //basic ajax call
+            $.ajax({
+              url: "https://api.yelp.com/v3/businesses/search?term="+ foodSearch ,
+              method: "GET"
+            }).then(function(response) {
+              console.log(response);
+            });
+    </script>
 
 </body>
 
