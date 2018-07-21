@@ -22,33 +22,60 @@
                 <a class="navbar-brand" href="#">
                         <img src="./images/barfinder.png" width="50" height="50" class="d-inline-block align-top" alt="">
                         
-                        <b>Bar Finder</b>
+                        <b>Food Finder</b>
                     
                     </a>
         
             <form class="form-inline">
-
-             <input class="form-control mr-sm-2" type="search" placeholder="Bar Search" aria-label="Search">
-             <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search" id="zipcode">
+            
                 <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Search Filters
+                      Cuisines
                     </a>
                   
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">$$$</a>
-                      <a class="dropdown-item" href="#">Specials</a>
-                      <a class="dropdown-item" href="#">Amenities</a>
+                      <a class="dropdown-item" href="#" id="american">American</a>
+                      <a class="dropdown-item" href="#" id="asian">Asian</a>
+                      <a class="dropdown-item" href="#" id="bagel">Bagel Shop</a>
+                      <a class="dropdown-item" href="#" id="bakery">Bakery</a>
+                      <a class="dropdown-item" href="#" id="bistro">Bistro</a>
+                      <a class="dropdown-item" href="#" id="bbq">BBQ Joint</a>
+                      <a class="dropdown-item" href="#" id="coffee">Coffee Shop</a>
+                      <a class="dropdown-item" href="#" id="deli-bodega">Deli/Bodega</a>
+                      <a class="dropdown-item" href="#" id="diner">Diner</a>
+                      <a class="dropdown-item" href="#" id="french">French</a>
+                      <a class="dropdown-item" href="#" id="indian">Indian</a>
+                      <a class="dropdown-item" href="#" id="italian">Italian</a>
+                      <a class="dropdown-item" href="#" id="latin-american">Latin American</a>
+                      <a class="dropdown-item" href="#" id="mexican">Mexican</a>
+                      <a class="dropdown-item" href="#" id="vegetarian-vegan">Vegetarian/Vegan</a>
+
                     </div>
                   </div>
+
+                     <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search" id="zipcode">
+                
              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit">Search</button>
             </form>
         </nav>
 
         <div class="container-fluid">
 
-            <p class="description"><i>A search engine to find your next favorite bar. Find the top spots near you for the best bar experience to fit your mood and budget. Bar Finder is helping you to determine the best bar based on your location and other preferences.</i></p>
-            
+            <p class="description"><i>A search engine for foodies. Find the top spots near you for the best food experience according to other foodies like you. Food Finder is helping you to determine the best place to eat based on your location and cuisine preferences.</i></p>
+            <br>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1" id="reviews-filter">Reviews</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                <label class="form-check-label" for="inlineCheckbox2" id="cost-filter">$$$</label>
+              </div>
+              </div>
+
+              <br>
+
             <div class="row">
                 <div class="col">
 
