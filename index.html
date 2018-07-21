@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <Authorization = Bearer "WhR5O7lUjCk0DCs-PNdCGC3Wn82klexZGqnWRKU9Or9R1RWcsEIDj7PZbUV_d2GY4qBav0YdAFQ_KwJn3nGd5iq_EEogmjVuT4K5dPNa4rteD4P4ZVt3ciNz9EpNW3Yx">
-    <title>Food Search</title>
+
+    <title>Bar Search</title>
 
   </head>
 
@@ -20,16 +20,16 @@
         <nav class="navbar navbar-light bg-light">
                 
                 <a class="navbar-brand" href="#">
-                        <img src="./images/Food-Finder-logo2.png" width="50" height="50" class="d-inline-block align-top" alt="">
+                        <img src="./images/barfinder.png" width="50" height="50" class="d-inline-block align-top" alt="">
                         
-                        <b>Food Finder</b>
+                        <b>Bar Finder</b>
                     
                     </a>
         
             <form class="form-inline">
 
-             <input class="form-control mr-sm-2" type="search" placeholder="Food Search" aria-label="Search" id="food-type">
-             <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search" id="location-area">
+             <input class="form-control mr-sm-2" type="search" placeholder="Bar Search" aria-label="Search">
+             <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search" id="zipcode">
                 <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Search Filters
@@ -37,8 +37,8 @@
                   
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                       <a class="dropdown-item" href="#">$$$</a>
-                      <a class="dropdown-item" href="#">Reviews</a>
-                      <a class="dropdown-item" href="#">Distance</a>
+                      <a class="dropdown-item" href="#">Specials</a>
+                      <a class="dropdown-item" href="#">Amenities</a>
                     </div>
                   </div>
              <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit">Search</button>
@@ -47,7 +47,7 @@
 
         <div class="container-fluid">
 
-            <p class="description"><i>A search engine for foodies. Find the top spots near you for the best food experience according to other foodies like you. Food Finder is helping you to determine the best place to eat based on your location and cuisine preferences.</i></p>
+            <p class="description"><i>A search engine to find your next favorite bar. Find the top spots near you for the best bar experience to fit your mood and budget. Bar Finder is helping you to determine the best bar based on your location and other preferences.</i></p>
             
             <div class="row">
                 <div class="col">
@@ -71,32 +71,30 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script>
            
-            var theKey = "b0bf1ed0a93aaeef20ab0f84ac47240e";
+            var clientId = "PCMP0XHAOEUBTKFSWSR4OZV3LWVOP15TUL5QLBPNG1G5HLFA";
+            var clientSecret = "C55FJGIOUSMMTTSRCANFNRSQBINF4A5OH0T1BEVYMURQGG2U";
             var foodSearch = "";
             var locationSearch = "";
-            var priceChoice = "";
-            var urlLink = "https://api.barzz.net/api/search?zip=" + locationSearch + "&user_key=b0bf1ed0a93aaeef20ab0f84ac47240e";
+            var priceChoice = "";;
            
             $("#submit").click(function(event) {
                 event.preventDefault();
-                foodSearch = $("#food-type").val().trim();
-                locationSearch = $("#location-area").val().trim();
+                //foodSearch = $("#food-type").val().trim();
+                locationSearch = $("#zipcode").val().trim();
+                var urlLink = "https://api.foursquare.com/v2/venues/search?near=" + locationSearch + "&client_id=" + clientId + "&client_secret=" + clientSecret + "&v=20182107";
+
+                console.log(locationSearch);
+
 
                 $.ajax({
                     url: urlLink,
-                    success: function(response) {
-                    console.log(response);
-                    }
+                    method: "GET"
+                })
+                    .then(function(response) {
+                        console.log(response);
                 });
 
             });
-            
-            
-
-
-
-
-            //basic ajax call
             
     </script>
 
