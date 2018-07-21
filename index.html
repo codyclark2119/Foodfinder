@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-
+    <Authorization = Bearer "WhR5O7lUjCk0DCs-PNdCGC3Wn82klexZGqnWRKU9Or9R1RWcsEIDj7PZbUV_d2GY4qBav0YdAFQ_KwJn3nGd5iq_EEogmjVuT4K5dPNa4rteD4P4ZVt3ciNz9EpNW3Yx">
     <title>Food Search</title>
 
   </head>
@@ -28,8 +28,8 @@
         
             <form class="form-inline">
 
-             <input class="form-control mr-sm-2" type="search" placeholder="Food Search" aria-label="Search">
-             <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search">
+             <input class="form-control mr-sm-2" type="search" placeholder="Food Search" aria-label="Search" id="food-type">
+             <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search" id="location-area">
                 <div class="dropdown">
                     <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Search Filters
@@ -41,7 +41,7 @@
                       <a class="dropdown-item" href="#">Distance</a>
                     </div>
                   </div>
-             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+             <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit">Search</button>
             </form>
         </nav>
 
@@ -67,18 +67,37 @@
             </div>
         </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script>
-            var yelpKey = WhR5O7lUjCk0DCs-PNdCGC3Wn82klexZGqnWRKU9Or9R1RWcsEIDj7PZbUV_d2GY4qBav0YdAFQ_KwJn3nGd5iq_EEogmjVuT4K5dPNa4rteD4P4ZVt3ciNz9EpNW3Yx;
+           
+            var theKey = "b0bf1ed0a93aaeef20ab0f84ac47240e";
             var foodSearch = "";
-            //basic ajax call
-            $.ajax({
-              url: "https://api.yelp.com/v3/businesses/search?term="+ foodSearch ,
-              method: "GET"
-            }).then(function(response) {
-              console.log(response);
+            var locationSearch = "";
+            var priceChoice = "";
+            var urlLink = "https://api.barzz.net/api/search?zip=" + locationSearch + "&user_key=b0bf1ed0a93aaeef20ab0f84ac47240e";
+           
+            $("#submit").click(function(event) {
+                event.preventDefault();
+                foodSearch = $("#food-type").val().trim();
+                locationSearch = $("#location-area").val().trim();
+
+                $.ajax({
+                    url: urlLink,
+                    success: function(response) {
+                    console.log(response);
+                    }
+                });
+
             });
+            
+            
+
+
+
+
+            //basic ajax call
+            
     </script>
 
 </body>
