@@ -96,34 +96,8 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script>
-           
-            var clientId = "PCMP0XHAOEUBTKFSWSR4OZV3LWVOP15TUL5QLBPNG1G5HLFA";
-            var clientSecret = "C55FJGIOUSMMTTSRCANFNRSQBINF4A5OH0T1BEVYMURQGG2U";
-            var foodSearch = "";
-            var locationSearch = "";
-            var priceChoice = "";;
-           
-            $("#submit").click(function(event) {
-                event.preventDefault();
-                //foodSearch = $("#food-type").val().trim();
-                locationSearch = $("#zipcode").val().trim();
-                var urlLink = "https://api.foursquare.com/v2/venues/search?near=" + locationSearch + "&client_id=" + clientId + "&client_secret=" + clientSecret + "&v=20182107";
-
-                console.log(locationSearch);
-
-
-                $.ajax({
-                    url: urlLink,
-                    method: "GET"
-                })
-                    .then(function(response) {
-                        console.log(response);
-                });
-
-            });
-            
-    </script>
+        <script src="script.js"></script>
+    
 
 </body>
 
