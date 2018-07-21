@@ -76,7 +76,7 @@
             var zipcodeKEy = GT099NqKYhhBhqrwplSPTkzfMGxn9esMx6FeRVwwPV0arHOMMwdtpTzWqjo3nAeN;
             var barZipcode = "" //make this the variable that hold the ajax call of the bar's zipcode
             var zipCodeSearch = ""; //this will be the user's zipcode input
-
+            event.preventDefault();
             $.ajax({
                 url: "https://www.zipcodeapi.com/rest/GT099NqKYhhBhqrwplSPTkzfMGxn9esMx6FeRVwwPV0arHOMMwdtpTzWqjo3nAeN/distance.json/" + zipCodeSeach + barCodeZipcode + "/mile",
                 method: "GET"
