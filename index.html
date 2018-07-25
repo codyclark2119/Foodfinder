@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <title>Bar Search</title>
+    <title>Restaurant Search</title>
 
   </head>
 
@@ -15,65 +15,92 @@
 
     <div class ="jumbotron">
 
-        <nav class="navbar navbar-light bg-light">
-                
-                <a class="navbar-brand" href="#">
-                        <img src="./images/barfinder.png" width="50" height="50" class="d-inline-block align-top" alt="">
-                        
-                        <b>Bar Finder</b>
+        <div class="bimg">
+
+            <nav class="navbar navbar-light bg-light">
                     
-                    </a>
-        
-            <form class="form-inline">
-
-             <input class="form-control mr-sm-2" type="search" placeholder="Bar Search" aria-label="Search">
-             <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search" id="zipcode">
-                <div class="dropdown">
-                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Search Filters
-                    </a>
-                  
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a class="dropdown-item" href="#">$$$</a>
-                      <a class="dropdown-item" href="#">Specials</a>
-                      <a class="dropdown-item" href="#">Amenities</a>
-                    </div>
-                  </div>
-             <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit">Search</button>
-            </form>
-        </nav>
-
-        <div class="container-fluid">
-
-            <p class="description"><i>A search engine to find your next favorite bar. Find the top spots near you for the best bar experience to fit your mood and budget. Bar Finder is helping you to determine the best bar based on your location and other preferences.</i></p>
+                <a class="navbar-brand" href="#">
+                    <img src="./images/Foodfinder.png" width="50" height="50" class="d-inline-block align-top" alt="">
+                    <b>Food Finder</b>        
+                </a>
             
-            <div class="row">
-                <div class="col">
+                <form class="form-inline">
+                
+                    <div class="dropdown">
+                        
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Cuisines
+                        </a>
+                    
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="dropdownchoice">
+                            <a class="dropdown-item" href="#" value="4d4b7105d754a06374d81259" id="Cuisines">All Foods</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d14e941735" id="American">American</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d142941735" id="Asian">Asian</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d179941735" id="Bagels">Bagels</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d16a941735" id="Bakery">Bakery</a>
+                            <a class="dropdown-item" href="#" value="52e81612bcbc57f1066b79f1" id="Bistro">Bistro</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d1df931735" id="Bbq">BBQ Joint</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d1e0931735" id="Coffee-Shop">Coffee Shop</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d146941735" id="Deli-Bodega">Deli/Bodega</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d147941735" id="Diner">Diner</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d10c941735" id="French">French</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d10f941735" id="Indian">Indian</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d110941735" id="Italian">Italian</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d1be941735" id="Latin-American">Latin American</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d1c1941735" id="Mexican">Mexican</a>
+                            <a class="dropdown-item" href="#" value="4bf58dd8d48988d1d3941735" id="Vegetarian-Vegan">Vegetarian/Vegan</a>
+                        </div>
+
+                    </div>
+
+                    <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search" id="zipcode">
+                    
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit">Search</button>
+
+                </nav>
+            </form>
+
+                <div class="container-fluid">
+
+                    <p class="description">
+                        <i>A search engine for foodies. Find the top spots near you for the best food experience according to other foodies like
+                            you. Food Finder will help you to find the best place to eat based on location and cuisine preferences.</i>
+                    </p>
+
+                </div>
+
+            <br>
+
+            <div class="container-fluid">
+
+                <div class="row">
+
+                    <div class="col">
 
                         <div id="filterOutput">Filter List Here</div>
 
                     </div>
 
-                <div class="col">
+                    <div class="col">
 
-                    <div id="map" style="width:480px;height:480px;">Map Here</div>
-
+                        <div id="info">Restaurant Info:</div> 
+            
                     </div>
 
-                 <div class="col">
+                    <div class="col">
 
-                    <div id="weather">Weather Here</div> 
-        
+                        <div id="map" style="width:480px;height:480px;">Map Here</div>
+
                     </div>
 
                 </div>
-    
             </div>
         </div>
+    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
     
 
 </body>
