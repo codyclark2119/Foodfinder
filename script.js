@@ -4,6 +4,7 @@
             var locationSearch = "";
             var priceChoice = "";
             var categoryType = "4d4b7105d754a06374d81259";
+            var mapDisplay = "";
             
            
             $("#submit").click(function(event) {
@@ -24,7 +25,6 @@
                 })
                     .then(function(response) {
                         
-                        var results = response.data;
                         console.log(response);
                         for (x = 0; x < response.response.venues.length; x++) {
                             var theList = $("<div>");
@@ -34,5 +34,7 @@
                         };
                 });
 
+                });
 
-            });
+              
+           
