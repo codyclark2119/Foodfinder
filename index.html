@@ -1,23 +1,15 @@
 <!doctype html>
-
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-<<<<<<< HEAD
     <title>Restaurant Search</title>
-
   </head>
-
   <body>
 
     <div class ="jumbotron">
-
         <div class="bimg">
-
             <nav class="navbar navbar-light bg-light">
                     
                 <a class="navbar-brand" href="#">
@@ -51,150 +43,47 @@
                             <a class="dropdown-item" href="#" value="4bf58dd8d48988d1c1941735" id="Mexican">Mexican</a>
                             <a class="dropdown-item" href="#" value="4bf58dd8d48988d1d3941735" id="Vegetarian-Vegan">Vegetarian/Vegan</a>
                         </div>
-
                     </div>
 
                     <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search" id="zipcode">
-                    
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit">Search</button>
 
-                </nav>
-            </form>
-
-                <div class="container-fluid">
-
-                    <p class="description">
-                        <i>A search engine for foodies. Find the top spots near you for the best food experience according to other foodies like
-                            you. Food Finder will help you to find the best place to eat based on location and cuisine preferences.</i>
-                    </p>
-
-                </div>
+                </form>
+            </nav>
+        
+            <div class="container-fluid">
+                <p class="description">
+                    <i>A search engine for foodies. Find the top spots near you for the best food experience according to other foodies like
+                        you. Food Finder will help you to find the best place to eat based on location and cuisine preferences.</i>
+                </p>
+            </div>
 
             <br>
 
-            <div class="container-fluid">
-
+            <div class="container">
                 <div class="row">
 
-                    <div class="col">
-
-                        <div id="filterOutput">Filter List Here</div>
-
+                    <div class="col-md-6">
+                        <div id="filterOutput"></div>
                     </div>
 
-                    <div class="col">
-
-                        <div id="info">Restaurant Info:</div> 
-            
+                    <div class="col-md-6">
+                        <h4 id="info">Restaurant Info:</h4> 
                     </div>
 
-                    <div class="col">
-
-                        <div id="map" style="width:480px;height:480px;">Map Here</div>
-
-=======
-
-    <title>Restaurant Search</title>
-
- </head>
-  
-    <body>
-  
-      <div class ="jumbotron">
-  
-       <div class="bimg">
-  
-          <nav class="navbar navbar-light bg-light">
-                  
-                  <a class="navbar-brand" href="#">
-                          <img src="./images/Foodfinder.png" width="50" height="50" class="d-inline-block align-top" alt="">
-                          
-                          <b>Food Finder</b>
-                      
-                      </a>
-          
-              <form class="form-inline">
-              
-                  <div class="dropdown">
-                      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Cuisines
-                      </a>
-                    
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#" id="american">American</a>
-                        <a class="dropdown-item" href="#" id="asian">Asian</a>
-                        <a class="dropdown-item" href="#" id="bagel">Bagel Shop</a>
-                        <a class="dropdown-item" href="#" id="bakery">Bakery</a>
-                        <a class="dropdown-item" href="#" id="bistro">Bistro</a>
-                        <a class="dropdown-item" href="#" id="bbq">BBQ Joint</a>
-                        <a class="dropdown-item" href="#" id="coffee">Coffee Shop</a>
-                        <a class="dropdown-item" href="#" id="deli-bodega">Deli/Bodega</a>
-                        <a class="dropdown-item" href="#" id="diner">Diner</a>
-                        <a class="dropdown-item" href="#" id="french">French</a>
-                        <a class="dropdown-item" href="#" id="indian">Indian</a>
-                        <a class="dropdown-item" href="#" id="italian">Italian</a>
-                        <a class="dropdown-item" href="#" id="latin-american">Latin American</a>
-                        <a class="dropdown-item" href="#" id="mexican">Mexican</a>
-                        <a class="dropdown-item" href="#" id="vegetarian-vegan">Vegetarian/Vegan</a>
-  
-                      </div>
->>>>>>> a1c82bfc0a9f3d16bf7aac7abf76053f07003374
-                    </div>
-  
-                       <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search" id="zipcode">
-                  
-               <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit">Search</button>
-              </form>
-          </nav>
-  
-          <div class="container-fluid">
-  
-              <p class="description"><i>A search engine for foodies. Find the top spots near you for the best food experience according to other foodies like you. Food Finder is helping you to determine the best place to eat based on your location and cuisine preferences.</i></p>
-              <br>
-  
-              <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                  <label class="form-check-label" for="inlineCheckbox1" id="reviews-filter">Reviews</label>
                 </div>
-<<<<<<< HEAD
             </div>
+
+            <div class="col-md-12">
+                <div id="map"></div>
+            </div>
+            
         </div>
     </div>
-=======
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                  <label class="form-check-label" for="inlineCheckbox2" id="cost-filter">$$$</label>
-                </div>
-                </div>
-  
-                <br>
-  
-              <div class="row">
-                  <div class="col">
-  
-                          <div id="filterOutput">Filter List Here</div>
-  
-                      </div>
-  
-                  <div class="col">
-  
-                      <div id="map" style="width:480px;height:480px;">Map Here</div>
-  
-                      </div>
 
-  
-                  </div>
-      
-              </div>
-          </div>
-          </div>
->>>>>>> a1c82bfc0a9f3d16bf7aac7abf76053f07003374
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+<script src="script.js"></script>
     
-
 </body>
-
 </html>
