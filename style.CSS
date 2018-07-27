@@ -1,186 +1,191 @@
-
 body.background{
-   margin: 0;
-   padding: 0;
-    height: 0 auto;
-    width: 100px;
-}
-
-form {
-    color: rgb(64, 24, 87);
-}
-
-.form-inline {
-    color: rgb(160, 225, 245);
-}
-
-h1 {
-    font-size: 72px;
-    font-family: 'Kaushan Script', cursive;
-    color: white;
-    font-weight: 700px;
-    text-align: center;
-    margin-top: .5rem;
-    margin-bottom: .1rem;
-    line-height: 1.1;
-}
-
-.info {
-    color: rgb(64, 24, 87);
-}
-p{
-    color:white;
-    text-align: center;
-    font-style: italic;
-    font-weight: bold;
-}
-
-.bg-light {
-    background-color: transparent;
-    color: transparent;
-}
-
-.navbar{
-    height: 0 auto;
-    width: 0 auto;
-    color: transparent;
-    background-color: transparent;
-   }
-.navbar-brand{
-    background-color: transparent;
-    color: transparent;
-}
-
-
-.btn.btn.btn.btn-secondary:hover{background-color: #237228;}
-.btn.btn.btn.btn-secondary:hover{color: white;}
-.btn.btn-secondary {
-    color: white;
-    font-weight: bold;
-    background-color:red;
-    border-color: #237228;
-    border-spacing: 3px 3px;
-    margin: 0 auto;
-    width: 0 auto;
-    margin-left: 200 px;
-    margin-right: 400px;
-}
-
-a.dropdown-item {
-    display: block;
-    margin: 0 auto;
-    width: 100%;
-    padding: .25rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color:  #237228;
-    font-weight: bold;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color:white;
-    border-spacing: 3px 3px;
-}
-
-.dropdown-menu{
-    margin: 0 auto;
-    width: 100px;
-}
-
-.description {
-    text-align: center;
-    color:  rgb(160,225,245);
-    font-weight: bold;
-    margin-left: 50px;
-    margin-right: 50px;
-   }
-
-
-.btn.btn-outline-success:hover{background-color: #237228;}
-.btn.btn-outline-success:hover{color: white;} 
-
-.btn.btn-outline-success{
-background-color: red;
-color:  rgb(160, 225, 245);
-font-weight: bold;
-}
-
-.form-control.mr-sm-2:hover{background-color: lemonchiffon;}
-.form-contrl.mr-sm-2:hover{color: rgb(64, 24, 87);}
-
-.form-contrl.mr-sm-2{
-  background-color: rgb(64, 24, 87);
-  color: rgb(160, 225, 245);
-  font-weight: bold;
-  margin: 0 auto;
-  width: 100px;
-}
+    margin: 0;
+    padding: 0;
+     height: 0 auto;
+     width: 100px;
+ }
  
-.search.form-contrl.mr-sm-2:hover{ background-color:tomato;}
-.search.form-contrl.mr-sm-2:hover{color: rgb(64, 24, 87);}
+ form {
+     color: rgb(64, 24, 87);
+ }
+ 
+ .form-inline {
+     color: rgb(160, 225, 245);
+ }
+ 
+ h1 {
+     font-size: 72px;
+     font-family: 'Kaushan Script', cursive;
+     color: white;
+     font-weight: 700px;
+     text-align: center;
+     margin-top: .5rem;
+     margin-bottom: .1rem;
+     line-height: 1.1;
+ }
+ 
+ .info {
+     color: rgb(64, 24, 87);
+ }
+ p{
+     color:white;
+     text-align: center;
+     font-style: italic;
+     font-weight: bold;
+ }
+ 
 
-.search.form-contrl.mr-sm-2{
-background-color: rgb(64, 24, 87);
-color: rgb(64, 24, 87);
-font-weight: bold; 
-}
-
-nav.navbar.navbar-light.bg-light {
-    background-color: rgb(64,24,87);
-    color: transparent;
-    margin-left: 250px;
-    margin-right: 250px;
-}
-
-
-
-.col-md-6.info{
-    color: #237228;
-}
-.bimg{
-    background-color: transparent;
-    color: transparent;
-}
-
-.h4{
-    font-family: 'Eater', cursive;
-}
-
-.container-fluid{
-    background-color: transparent;
-}
-
-button.userchoices {
-
-    display: -ms-inline-grid;
-    padding: 1.2em 1em 0;
-    min-width: 15rem;
-    border:10px rgb(160,225,245);
-    border-spacing: 3px 3px;
-    justify-content: 50px;
+ .navbar{
+     height: auto;
+     width:  auto;
+     color: transparent;
+     background-color: transparent;
+    }
+ .navbar-brand{
+     background-color: transparent;
+     color: transparent;
+ }
+ 
+ 
+ .btn.btn.btn.btn-secondary:hover{background-color: #237228;}
+ .btn.btn.btn.btn-secondary:hover{color: white;}
+ .btn.btn-secondary {
+     color: white;
+     font-weight: bold;
+     background-color:red;
+     border-color: #237228;
+     border-spacing: 3px 3px;
+     margin: 0 auto;
+     width: 0 auto;
+     margin-left: 114px;
+     margin-right: 124px;
+ }
+ 
+ a.dropdown-item {
+     display: block;
+     margin: 0 auto;
+     width: 100%;
+     padding: .25rem 1.5rem;
+     clear: both;
+     font-weight: 400;
+     color:  #237228;
+     font-weight: bold;
+     text-align: inherit;
+     white-space: nowrap;
+     background-color:white;
+     border-spacing: 3px 3px;
+ }
+ 
+ .dropdown-menu{
+     margin: 0 auto;
+     width: 0 auto;
+     margin-left: 114px;
+ }
+ 
+ .description {
+     text-align: center;
+     color:  rgb(160,225,245);
+     font-weight: bold;
+     margin-left: 50px;
+     margin-right: 50px;
+    }
+ 
+ 
+ .btn.btn-outline-success:hover{background-color: #237228;}
+ .btn.btn-outline-success:hover{color: white;} 
+ 
+ .btn.btn-outline-success{
+ background-color: red;
+ color:  white;
+ font-weight: bold;
+ }
+ 
+ .form-control.mr-sm-2:hover{background-color: lemonchiffon;}
+ .form-contrl.mr-sm-2:hover{color: rgb(64, 24, 87);}
+ 
+ .form-contrl.mr-sm-2{
+   background-color: rgb(64, 24, 87);
+   color: rgb(160, 225, 245);
+   font-weight: bold;
+   margin: 0 auto;
+   width: 100px;
+ }
+  
+ .search.form-contrl.mr-sm-2:hover{ background-color:tomato;}
+ .search.form-contrl.mr-sm-2:hover{color: rgb(64, 24, 87);}
+ 
+ .search.form-contrl.mr-sm-2{
+ background-color: rgb(64, 24, 87);
+ color: rgb(64, 24, 87);
+ font-weight: bold; 
+ }
+ 
+ nav.navbar.navbar-light.bg-light {
+     background-color: rgb(64,24,87);
+     color: transparent;
+     margin-left: 250px;
+     margin-right: 250px;
+ }
+ 
+ 
+ 
+ .col-md-6.info{
+     color: #237228;
+ }
+ .bimg{
+     background-color: transparent;
+     color: transparent;
+ }
+ 
+ .h4{
+     font-family: 'Eater', cursive;
+ }
+ 
+ .container-fluid{
+     background-color: transparent;
+ }
+ 
+ button.userchoices {
+ 
+     display: -ms-inline-grid;
+     padding: 1.2em 1em 0;
+     min-width: 15rem;
+     border:10px rgb(160,225,245);
+     border-spacing: 3px 3px;
+     justify-content: 50px;
+     height: 75px;
+    width: 250px;
+    font-family: kaushan script;
+    margin: 10px;
+    border-width: 10px;
+    border-color: rgb(160,225,245);
     background-color: #237228;
     color: white;
-    font-weight: bold;
-}
-
-img.userChoice-map{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 25px;
-    padding-bottom: 90px;
-    height: 325px;
-    width: 375px;
-}
-
-.zipcode.form-contrl.mr-sm-2{
-    background-color:transparent;
-}
-
-.img{
-    height: 0 auto;
-    width: 0 auto;
-}
-
-.a:hover{color: black;
-
-}
+    
+ }
+ 
+ img.userChoice-map{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     padding-top: 25px;
+     padding-bottom: 90px;
+     height: 325px;
+     width: 375px;
+ }
+ 
+ .zipcode.form-contrl.mr-sm-2{
+     background-color:transparent;
+ }
+ 
+ .img{
+     height: 0 auto;
+     width: 0 auto;
+ }
+ 
+ .a:hover{color: black;}
+ .a {
+     color: black;
+ }
+ 
+ 
