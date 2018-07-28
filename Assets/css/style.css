@@ -1,25 +1,3 @@
-
-@media (min-width: 576px) {
-    body {
-        height: 100%;
-        width:100%;
-    }
-}
-
-@media (min-width: 768px) {
-    body {
-        height: 100%;
-        width:100%;
-    }
-}
-
-@media (min-width: 992px) {
-    body {
-        height: 100%;
-        width:100%;
-    }
-}
-
 body {
     height: 100%;
     width:100%;
@@ -266,12 +244,36 @@ img.userChoice-map{
     background-color:transparent;
 }
 
-.img{
-    height: 0 auto;
-    width: 0 auto;
+.store-image{
+    vertical-align: middle;
+    height: 100%;
+    width: 100%;
 }
 
 .a:hover{color: black;}
 .a {
     color: black;
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    .body .container-fluid .h1 {
+        height: 100%;
+        width:100%;
+        padding-right: 50px;
+    }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .body .container-fluid .h1 {
+        height: 100%;
+        width:100%;
+        padding-right: 50px;
+    }
+}
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .body .container-fluid .h1 {
+        height: 100%;
+        width:100%;
+    }
 }

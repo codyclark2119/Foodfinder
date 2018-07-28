@@ -120,6 +120,7 @@ $(".userchoices").click(function (event) {
 
             if (response.response.venue.bestPhoto) {
                 bestImg.attr("src", response.response.venue.bestPhoto.prefix + "450" + "x" + "400" + response.response.venue.bestPhoto.suffix);
+                bestImg.addClass("store-image");
                 cardDiv.append(bestImg);
             }
 
