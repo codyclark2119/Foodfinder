@@ -1,94 +1,121 @@
 <!doctype html>
 <html lang="en">
- 
 
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.CSS">
-    <link rel="stylesheet" href="./assets/css/hover.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"
+        integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Assets/css/style.CSS">
+    <link rel="stylesheet" href="/Assets/css/hover.css">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Kaushan+Script|Pacifico" rel="stylesheet">
-    <body background="./assets/images/pexels-photo-616404.jpeg">
+
+<body background="/Assets/images/pexels-photo-616404.jpeg">
 
     <title>FOOD FINDER</title>
-  </head>
-  <body>
-    <header>
-        <h1 class="text-center">Food Finder</h1>
-        <h5 class="text-center">A quick and easy way to find a food place of your choice, just down the street wherever you are!!!</h5>
-    </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="container">
-                    <nav class="navbar">
-                            
-                        <form class="form-inline">
-                        
-                            <div class="dropdown">
-                                
-                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Cuisines
-                                </a>
-                            
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="dropdownchoice">
-                                    <a class="dropdown-item" href="#" value="4d4b7105d754a06374d81259" id="Cuisines">All Foods</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d14e941735" id="American">American</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d142941735" id="Asian">Asian</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d179941735" id="Bagels">Bagels</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d16a941735" id="Bakery">Bakery</a>
-                                    <a class="dropdown-item" href="#" value="52e81612bcbc57f1066b79f1" id="Bistro">Bistro</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d1df931735" id="Bbq">BBQ Joint</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d1e0931735" id="Coffee-Shop">Coffee Shop</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d146941735" id="Deli-Bodega">Deli/Bodega</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d147941735" id="Diner">Diner</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d10c941735" id="French">French</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d10f941735" id="Indian">Indian</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d110941735" id="Italian">Italian</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d1be941735" id="Latin-American">Latin American</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d1c1941735" id="Mexican">Mexican</a>
-                                    <a class="dropdown-item" href="#" value="4bf58dd8d48988d1d3941735" id="Vegetarian-Vegan">Vegetarian/Vegan</a>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="text-center">Food Finder</h1>
+            <h5 class="text-center">A quick and easy way to find a food place of your choice, just down the street
+                wherever you are!!!</h5>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="container">
+                        <nav class="navbar">
+
+                            <form class="form-inline">
+
+                                <div class="dropdown">
+
+                                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                        id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        Cuisines
+                                    </a>
+
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" id="dropdownchoice">
+                                        <a class="dropdown-item" href="#" value="4d4b7105d754a06374d81259"
+                                            id="Cuisines">All Foods</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d14e941735"
+                                            id="American">American</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d142941735"
+                                            id="Asian">Asian</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d179941735"
+                                            id="Bagels">Bagels</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d16a941735"
+                                            id="Bakery">Bakery</a>
+                                        <a class="dropdown-item" href="#" value="52e81612bcbc57f1066b79f1"
+                                            id="Bistro">Bistro</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d1df931735" id="Bbq">BBQ
+                                            Joint</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d1e0931735"
+                                            id="Coffee-Shop">Coffee Shop</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d146941735"
+                                            id="Deli-Bodega">Deli/Bodega</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d147941735"
+                                            id="Diner">Diner</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d10c941735"
+                                            id="French">French</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d10f941735"
+                                            id="Indian">Indian</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d110941735"
+                                            id="Italian">Italian</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d1be941735"
+                                            id="Latin-American">Latin American</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d1c1941735"
+                                            id="Mexican">Mexican</a>
+                                        <a class="dropdown-item" href="#" value="4bf58dd8d48988d1d3941735"
+                                            id="Vegetarian-Vegan">Vegetarian/Vegan</a>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <input class="form-control mr-sm-2" type="search" placeholder="Zip Code" aria-label="Search" id="zipcode">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submit">Search</button>
+                                <input class="form-control mr-sm-2" type="search" placeholder="Zip Code"
+                                    aria-label="Search" id="zipcode">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                                    id="submit">Search</button>
 
-                        </form>
-                    </nav>
+                            </form>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-                <div class="container-fluid">
-                    <div class="container">
-                        <div class="row">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
 
-                            <div class="col-md-5 box">
-                                <div id="filterOutput"></div>
-                            </div>
-
-                            <span class="col-md-1"></span>
-
-                            <div class="col-md-6 text-center">
-                                <h1>Restaurant Info:</h1>
-                                    <h2 id="name" class="navcard"></h2>
-                                    <h4 id="location" class="navcard"></h4>
-                                    <div id="map" class="navcard"></div>
-                                    <h2 id="site" class="navcard"></h2> 
-                                    <h4 id="info" class="navcard"></h4>
-                                    <h4 id="menulink" class="navcard"></h4>
-                            </div>
-
-                        </div>
+                    <div class="col-md-5 box">
+                        <div id="filterOutput"></div>
                     </div>
-                </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-<script src="./script.js"></script>
-    
-</body>
+                    <span class="col-md-1"></span>
+
+                    <div class="col-md-6 text-center">
+                        <h1>Restaurant Info:</h1>
+                        <h2 id="name" class="navcard"></h2>
+                        <h4 id="location" class="navcard"></h4>
+                        <div id="map" class="navcard"></div>
+                        <h2 id="site" class="navcard"></h2>
+                        <h4 id="info" class="navcard"></h4>
+                        <h4 id="menulink" class="navcard"></h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+            integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+            crossorigin="anonymous"></script>
+        <script src="/script.js"></script>
+
+    </body>
+
 </html>
