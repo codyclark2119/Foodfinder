@@ -8,6 +8,7 @@ var foodSearch = "";
 var locationSearch = "";
 var priceChoice = "";
 var theLat = "";
+var thisThing;
 var theLng = "";
 var userSearches = 0;
 
